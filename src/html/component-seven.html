@@ -1,0 +1,28 @@
+<child-select>
+  <!--  <section>Section Content</section> -->
+  <div class="class-select1">
+    <nav>
+      <a [routerLink]="['/component-one']">Component One</a>
+      <a [routerLink]="['/component-two']">Component Two</a>
+    </nav>
+    <div style="color: green; margin-top: 1rem;">Outlet:</div>
+    <div style="border: 2px solid green; padding: 1rem;">
+      <router-outlet></router-outlet>
+    </div>
+
+    <div style="color: green; margin-top: 1rem;">Sidebar Outlet:</div>
+    <div style="border: 2px solid blue; padding: 1rem;">
+      <router-outlet name="sidebar"></router-outlet>
+    </div>
+
+  </div>
+
+  <!--
+    <div class="class-select"></div>
+      <section >AAAAAAA</section>
+  -->
+  <footer>Footer Content</footer>
+  <header><h3>Routes</h3></header>
+
+</child-select>
+

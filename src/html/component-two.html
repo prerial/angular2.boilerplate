@@ -1,0 +1,50 @@
+
+<child-select>
+<!--  <section>Section Content</section> -->
+  <div class="class-select1">
+    <div style="font-weight:bold;float:left">Accessing Child Component Classes</div>
+    <div style="float:left"><button type="button" (click)="toggleExists()">Toggle Component</button></div>
+    <br><br>
+
+    <if-example *ngIf="exists">
+      <h3>@ViewChild</h3>
+      <view-child></view-child>
+
+      <h3>@ViewChildren</h3>
+      <view-children></view-children>
+
+      <h3>@ContentChild and @ContentChildren</h3>
+
+      <app-hello-list>
+        <app-hello name="World"></app-hello>
+        <app-hello name="Other World"></app-hello>
+        <app-hello #last name="Last World"></app-hello>
+      </app-hello-list>
+      <p>Calls function on child component classes to randomize color of them.</p>`
+      <h3>View Encapsulation</h3>
+
+      <div class="hello">Hello World</div>
+      <app-hello-emulated></app-hello-emulated>
+      <app-hello-native></app-hello-native>
+      <app-hello-none></app-hello-none>
+
+      <h3>ElementRef</h3>
+      <el-ref></el-ref>
+
+    </if-example>
+
+
+  </div>
+
+<!--
+  <div class="class-select">
+
+  </div>
+
+  <section></section>
+-->
+  <footer>Footer Content</footer>
+  <header><h2>Advanced Components</h2></header>
+
+</child-select>
+
