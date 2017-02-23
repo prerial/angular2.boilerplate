@@ -1,0 +1,46 @@
+
+<child-select>
+<!--
+  <section>Section Content</section>
+-->
+  <div class="class-select1">
+    <div style="font-weight:bold;float:left">Structural Directives</div><div style="float:left">
+    <button type="button" (click)="toggleExists()">Toggle Component</button>
+  </div>
+    <br><br>
+
+    <h3>NgIf & NgFor Directive</h3>
+    <if-example *ngIf="exists">
+
+      <for-example *ngFor="let episode of episodes" [episode]="episode">
+        {{episode.title}}
+      </for-example>
+
+    </if-example>
+
+    <br><br>
+
+    <h3>NgSwitch Directives</h3>
+    <switch-example>
+      <app-tab></app-tab>
+      <app-tab-content></app-tab-content>
+    </switch-example>
+
+    <h3>Multiple Structural Directives</h3>
+    <multiple-example></multiple-example>
+  </div>
+
+<!--
+  <div class="class-select">
+
+  </div>
+
+    <section >
+AAAAAAA
+    </section>
+-->
+  <footer>Footer Content</footer>
+  <header><h2>Directives</h2></header>
+
+</child-select>
+
